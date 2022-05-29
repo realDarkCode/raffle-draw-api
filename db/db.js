@@ -49,11 +49,9 @@ class MyDB {
              * 
              * @param {Ticket} ticket 
              */
-            ticket => {
+            ticket => ticket.id === ticketId
                 
-                const result = ticket.id === ticketId;
-                return result
-            }
+            
         )
         return ticket;
     }
@@ -68,9 +66,8 @@ class MyDB {
             /**
              * @param {Ticket} ticket 
              */
-            ticket => {
-                ticket.username === username
-            }
+            ticket => ticket.username === username
+
         )
         return tickets;
     }
