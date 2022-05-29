@@ -30,19 +30,19 @@ Lottery ticket managing system using express and REST API.
 
 Clone repository or just simply download zip.
 
-```powershell
+```bash
 git clone https://github.com/realDarkCode/raffle-draw-api.git
 ```
 
 navigate to directory
 
-```powershell
+```bash
 cd raffle-draw-api
 ```
 
 install dependencies
 
-```powershell
+```bash
 npm install
 # or
 yarn install
@@ -50,7 +50,7 @@ yarn install
 
 run the application
 
-```powershell
+```bash
 npm start
 # or
 yarn start
