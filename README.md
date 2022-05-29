@@ -2,7 +2,7 @@
 
 Ticket managing system using express and REST API.
 
-## Requirements
+## Features
 
 - Sell Lottery Ticket
 - Update Lottery Ticket
@@ -13,22 +13,26 @@ Ticket managing system using express and REST API.
 
 ## Ticket Model:
 
-- number (unique).
-- userName
-- price
-- createdAt
-- updatedAt
+| Name      | Type   | Description                          |
+| --------- | ------ | ------------------------------------ |
+| id        | String | Unique id of a ticket                |
+| username  | String | username who owns the ticket         |
+| price     | Number | ticket price amount                  |
+| createdAt | Date   | timestamp of ticket creation         |
+| updatedAt | Date   | timestamp of last update of a ticket |
 
 ## Routes:
 
-- /health [GET] - status of the application
-- /api/v1/tickets/t/:ticketId[GET] - find single ticket by id
-- /api/v1/tickets/t/:ticketId[PATCH] - update ticket by id
-- /api/v1/tickets/t/:ticketId[DELETE] - delete ticket by id
-- /api/v1/tickets/u/:username[GET] - find tickets for a given user
-- /api/v1/tickets/u/:username[PATCH] - update tickets for a given user
-- /api/v1/tickets/u/:username[DELETE] - delete all tickets for a given user
-- /api/v1/tickets/sell[POST] - create lottery ticket
-- /api/v1/tickets/bulk[POST] - bulk sell ticket
-- /api/v1/tickets/draw[POST] - draw lottery
-- /api/v1/tickets[GET] - find all lottery
+| Method | URL                           | Description                         |
+| :----- | :---------------------------- | :---------------------------------- |
+| GET    | `/health`                     | status of the application           |
+| GET    | `/api/v1/tickets`             | find all lottery                    |
+| POST   | `/api/v1/tickets/sell`        | create lottery ticket               |
+| POST   | `/api/v1/tickets/bulk`        | bulk sell ticket                    |
+| POST   | `/api/v1/tickets/draw`        | draw lottery                        |
+| GET    | `/api/v1/tickets/t/:ticketId` | find single ticket by id            |
+| PATCH  | `/api/v1/tickets/t/:ticketId` | update ticket by id                 |
+| DELETE | `/api/v1/tickets/t/:ticketId` | delete ticket by id                 |
+| GET    | `/api/v1/tickets/u/:username` | find all tickets for a given user   |
+| PATCH  | `/api/v1/tickets/u/:username` | update all tickets for a given user |
+| DELETE | `/api/v1/tickets/u/:username` | delete all tickets for a given user |
