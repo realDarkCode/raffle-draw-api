@@ -6,3 +6,10 @@
 - Get Ticket by id
 - bulk buy (User can buy multiple ticket at a time)
 - raffle draw
+
+Ticket:
+
+- number (unique).
+- userName
+- price
+- timestamp
