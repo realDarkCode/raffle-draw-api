@@ -50,7 +50,9 @@ class MyDB {
              * @param {Ticket} ticket 
              */
             ticket => {
-                ticket.id === ticketId;
+                
+                const result = ticket.id === ticketId;
+                return result
             }
         )
         return ticket;
