@@ -1,15 +1,60 @@
 # Basic Ticket System API
 
-Ticket managing system using express and REST API.
+Lottery ticket managing system using express and REST API.
+
+## Contents
+
+1. [Requirements](#features)
+1. [Features](#features)
+1. [Installation](#installation)
+1. [Ticket Model](#ticket-model)
+1. [Routes](#routes)
+
+## Requirements
+
+- `NodeJS`
+- `express`
+- `rest API Concept`
 
 ## Features
 
-- Sell Lottery Ticket
-- Update Lottery Ticket
+- Sell lottery ticket
+- Sell bulk lottery tickets
+- Update/delete lottery ticket
 - Get all tickets
 - Get Ticket by id
 - bulk buy (User can buy multiple ticket at a time)
-- raffle draw
+- raffle draw (get lottery winners)
+
+## Installation
+
+Clone repository or just simply download zip.
+
+```bash
+git clone https://github.com/realDarkCode/raffle-draw-api.git
+```
+
+navigate to directory
+
+```bash
+cd raffle-draw-api
+```
+
+install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+run the application
+
+```bash
+npm start
+# or
+yarn start
+```
 
 ## Ticket Model:
 
