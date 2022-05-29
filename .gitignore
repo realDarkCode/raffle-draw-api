@@ -142,3 +142,5 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+# vscode config files
+.vscode
